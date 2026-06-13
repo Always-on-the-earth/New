@@ -75,6 +75,23 @@ footer {
   <div class="sub">by ヒーロー</div>
 </header>
 
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
 <div class="container">
 
   <div class="card">
