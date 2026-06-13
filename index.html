@@ -1,1 +1,103 @@
-<div class="card"> <img src="https://picsum.photos/600/350?1"> <div class="card-content"> <span class="tag">山中湖</span> <h2>富士山と朝ツーリング</h2> <p>静かな朝の山中湖。トリッカーでのんびり走る時間が最高。</p> <p>☕ 湖畔カフェでまったり</p> </div> </div> <div class="card"> <img src="https://picsum.photos/600/350?2"> <div class="card-content"> <span class="tag">丹沢湖</span> <h2>癒しの湖ツーリング</h2> <p>人が少なくて落ち着く場所。写真好きにはたまらない。</p> <p>📷 映えるスポット多数</p> </div> </div> <div class="card"> <img src="https://picsum.photos/600/350?3"> <div class="card-content"> <span class="tag">愛車</span> <h2>Yamaha Tricker</h2> <p>軽くて自由に走れる相棒。街も林道も気軽に行ける。</p> <p>🌿 ゆるく楽しむのがスタイル</p> </div> </div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ゆるツーリング日記</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  background: linear-gradient(135deg, #6db3f2, #1e69de);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.sub {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.tag {
+  font-size: 12px;
+  color: #888;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>ゆるツーリング日記</h1>
+  <div class="sub">by ヒーロー</div>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://picsum.photos/600/350?1">
+    <div class="card-content">
+      <div class="tag">山中湖</div>
+      <h2>富士山と朝ツーリング</h2>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/600/350?2">
+    <div class="card-content">
+      <div class="tag">丹沢湖</div>
+      <h2>のんびり湖畔ツーリング</h2>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © ゆるツーリング日記
+</footer>
+
+</body>
+</html>
